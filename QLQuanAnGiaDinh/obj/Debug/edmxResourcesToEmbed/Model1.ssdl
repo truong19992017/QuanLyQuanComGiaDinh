@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLQuanAnGiaDinhModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BanAn">
+    <Key>
+      <PropertyRef Name="mabanan" />
+    </Key>
+    <Property Name="mabanan" Type="int" Nullable="false" />
+    <Property Name="tenbanan" Type="nvarchar" MaxLength="20" />
+    <Property Name="trangthai" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CTPhieuGoiMon">
+    <Key>
+      <PropertyRef Name="mactphieugoimon" />
+    </Key>
+    <Property Name="mactphieugoimon" Type="int" Nullable="false" />
+    <Property Name="maphieugoimon" Type="int" />
+    <Property Name="mathucan" Type="int" />
+    <Property Name="giaban" Type="float" />
+    <Property Name="soluong" Type="int" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="mahoadon" />
+    </Key>
+    <Property Name="mahoadon" Type="int" Nullable="false" />
+    <Property Name="ngaythanhtoan" Type="datetime" />
+    <Property Name="maphieugoimon" Type="int" />
+    <Property Name="tongtien" Type="float" />
+  </EntityType>
+  <EntityType Name="LoaiThucAn">
+    <Key>
+      <PropertyRef Name="maloaithucan" />
+    </Key>
+    <Property Name="maloaithucan" Type="int" Nullable="false" />
+    <Property Name="tenloaithucan" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="PhieuGoiMon">
+    <Key>
+      <PropertyRef Name="maphieugoimon" />
+    </Key>
+    <Property Name="maphieugoimon" Type="int" Nullable="false" />
+    <Property Name="mabanan" Type="int" />
+    <Property Name="tinhtrang" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="sdt" />
+    </Key>
+    <Property Name="sdt" Type="nchar" MaxLength="11" Nullable="false" />
+    <Property Name="taikhoan" Type="nchar" MaxLength="20" />
+    <Property Name="matkhau" Type="nchar" MaxLength="30" />
+    <Property Name="ten" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="ThucAn">
+    <Key>
+      <PropertyRef Name="mathucan" />
+    </Key>
+    <Property Name="mathucan" Type="int" Nullable="false" />
+    <Property Name="tenthucan" Type="nvarchar" MaxLength="20" />
+    <Property Name="giathucan" Type="real" />
+    <Property Name="maloaithucan" Type="int" />
+  </EntityType>
+  <EntityContainer Name="QLQuanAnGiaDinhModelStoreContainer">
+    <EntitySet Name="BanAn" EntityType="Self.BanAn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CTPhieuGoiMon" EntityType="Self.CTPhieuGoiMon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoaDon" EntityType="Self.HoaDon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoaiThucAn" EntityType="Self.LoaiThucAn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhieuGoiMon" EntityType="Self.PhieuGoiMon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaiKhoan" EntityType="Self.TaiKhoan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThucAn" EntityType="Self.ThucAn" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLQuanAnGiaDinhModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BanAn">
+    <Key>
+      <PropertyRef Name="mabanan" />
+    </Key>
+    <Property Name="mabanan" Type="Int32" Nullable="false" />
+    <Property Name="tenbanan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="trangthai" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CTPhieuGoiMon">
+    <Key>
+      <PropertyRef Name="mactphieugoimon" />
+    </Key>
+    <Property Name="mactphieugoimon" Type="Int32" Nullable="false" />
+    <Property Name="maphieugoimon" Type="Int32" />
+    <Property Name="mathucan" Type="Int32" />
+    <Property Name="giaban" Type="Double" />
+    <Property Name="soluong" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="mahoadon" />
+    </Key>
+    <Property Name="mahoadon" Type="Int32" Nullable="false" />
+    <Property Name="ngaythanhtoan" Type="DateTime" Precision="3" />
+    <Property Name="maphieugoimon" Type="Int32" />
+    <Property Name="tongtien" Type="Double" />
+  </EntityType>
+  <EntityType Name="LoaiThucAn">
+    <Key>
+      <PropertyRef Name="maloaithucan" />
+    </Key>
+    <Property Name="maloaithucan" Type="Int32" Nullable="false" />
+    <Property Name="tenloaithucan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="sdt" />
+    </Key>
+    <Property Name="sdt" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="taikhoan1" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="matkhau" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="ten" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ThucAn">
+    <Key>
+      <PropertyRef Name="mathucan" />
+    </Key>
+    <Property Name="mathucan" Type="Int32" Nullable="false" />
+    <Property Name="tenthucan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="giathucan" Type="Single" />
+    <Property Name="maloaithucan" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="QLQuanAnGiaDinhEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BanAns" EntityType="Self.BanAn" />
+    <EntitySet Name="CTPhieuGoiMons" EntityType="Self.CTPhieuGoiMon" />
+    <EntitySet Name="HoaDons" EntityType="Self.HoaDon" />
+    <EntitySet Name="LoaiThucAns" EntityType="Self.LoaiThucAn" />
+    <EntitySet Name="TaiKhoans" EntityType="Self.TaiKhoan" />
+    <EntitySet Name="ThucAns" EntityType="Self.ThucAn" />
+    <EntitySet Name="PhieuGoiMons" EntityType="QLQuanAnGiaDinhModel.PhieuGoiMon" />
+  </EntityContainer>
+  <EntityType Name="PhieuGoiMon">
+    <Key>
+      <PropertyRef Name="maphieugoimon" />
+    </Key>
+    <Property Name="maphieugoimon" Type="Int32" Nullable="false" />
+    <Property Name="mabanan" Type="Int32" />
+    <Property Name="tinhtrang" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

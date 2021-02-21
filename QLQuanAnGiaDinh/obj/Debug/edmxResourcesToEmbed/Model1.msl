@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLQuanAnGiaDinhModelStoreContainer" CdmEntityContainer="QLQuanAnGiaDinhEntities">
+    <EntitySetMapping Name="BanAns">
+      <EntityTypeMapping TypeName="QLQuanAnGiaDinhModel.BanAn">
+        <MappingFragment StoreEntitySet="BanAn">
+          <ScalarProperty Name="trangthai" ColumnName="trangthai" />
+          <ScalarProperty Name="mabanan" ColumnName="mabanan" />
+          <ScalarProperty Name="tenbanan" ColumnName="tenbanan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTPhieuGoiMons">
+      <EntityTypeMapping TypeName="QLQuanAnGiaDinhModel.CTPhieuGoiMon">
+        <MappingFragment StoreEntitySet="CTPhieuGoiMon">
+          <ScalarProperty Name="mactphieugoimon" ColumnName="mactphieugoimon" />
+          <ScalarProperty Name="maphieugoimon" ColumnName="maphieugoimon" />
+          <ScalarProperty Name="mathucan" ColumnName="mathucan" />
+          <ScalarProperty Name="giaban" ColumnName="giaban" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoaDons">
+      <EntityTypeMapping TypeName="QLQuanAnGiaDinhModel.HoaDon">
+        <MappingFragment StoreEntitySet="HoaDon">
+          <ScalarProperty Name="mahoadon" ColumnName="mahoadon" />
+          <ScalarProperty Name="ngaythanhtoan" ColumnName="ngaythanhtoan" />
+          <ScalarProperty Name="maphieugoimon" ColumnName="maphieugoimon" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiThucAns">
+      <EntityTypeMapping TypeName="QLQuanAnGiaDinhModel.LoaiThucAn">
+        <MappingFragment StoreEntitySet="LoaiThucAn">
+          <ScalarProperty Name="maloaithucan" ColumnName="maloaithucan" />
+          <ScalarProperty Name="tenloaithucan" ColumnName="tenloaithucan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaiKhoans">
+      <EntityTypeMapping TypeName="QLQuanAnGiaDinhModel.TaiKhoan">
+        <MappingFragment StoreEntitySet="TaiKhoan">
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="taikhoan1" ColumnName="taikhoan" />
+          <ScalarProperty Name="matkhau" ColumnName="matkhau" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThucAns">
+      <EntityTypeMapping TypeName="QLQuanAnGiaDinhModel.ThucAn">
+        <MappingFragment StoreEntitySet="ThucAn">
+          <ScalarProperty Name="mathucan" ColumnName="mathucan" />
+          <ScalarProperty Name="tenthucan" ColumnName="tenthucan" />
+          <ScalarProperty Name="giathucan" ColumnName="giathucan" />
+          <ScalarProperty Name="maloaithucan" ColumnName="maloaithucan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhieuGoiMons">
+      <EntityTypeMapping TypeName="QLQuanAnGiaDinhModel.PhieuGoiMon">
+        <MappingFragment StoreEntitySet="PhieuGoiMon">
+          <ScalarProperty Name="tinhtrang" ColumnName="tinhtrang" />
+          <ScalarProperty Name="mabanan" ColumnName="mabanan" />
+          <ScalarProperty Name="maphieugoimon" ColumnName="maphieugoimon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

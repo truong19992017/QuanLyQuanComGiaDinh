@@ -1,0 +1,17 @@
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\bin\Debug\QLQuanAnGiaDinh.exe.config
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\bin\Debug\QLQuanAnGiaDinh.exe
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\bin\Debug\QLQuanAnGiaDinh.pdb
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.csprojAssemblyReference.cache
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.Form1.resources
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.Properties.Resources.resources
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.csproj.GenerateResource.cache
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.csproj.CoreCompileInputs.cache
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.exe
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.pdb
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\bin\Debug\EntityFramework.dll
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\bin\Debug\EntityFramework.SqlServer.dll
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\bin\Debug\EntityFramework.xml
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\bin\Debug\EntityFramework.SqlServer.xml
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.csproj.CopyComplete
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.index.index.resources
+D:\code c#\QLQuanAnGiaDinh\QLQuanAnGiaDinh\QLQuanAnGiaDinh\obj\Debug\QLQuanAnGiaDinh.dangki.dangki.resources
